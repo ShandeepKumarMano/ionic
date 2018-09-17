@@ -3,7 +3,7 @@ pipeline {
 	agent any
 
 	environment {
-		PATH = 'C:\Program Files\nodejs\node.exe'
+		PATH = 'node.exe'
 	}
 
 	stages {
