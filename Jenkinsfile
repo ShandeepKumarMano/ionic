@@ -10,20 +10,20 @@ pipeline {
 
 		stage('NPM Setup') {
 			steps {
-				bat 'npm install'
+				sh 'npm install'
 			}
 		}
 
 		stage('IOS Build') {
 			steps {
-				bat 'ionic cordova build ios --release'
+				sh 'ionic cordova build ios --release'
 
 			}
 		}
 
 		stage('Android Build') {
 			steps {
-				bat 'ionic cordova build android --release'
+				sh 'ionic cordova build android --release'
 
 			}
 		}
@@ -37,7 +37,7 @@ pipeline {
 
 		stage('Stage Web Build') {
 			steps {
-				bat 'npm run build --prod'
+				sh 'npm run build --prod'
 			}
 		}
 
