@@ -1,0 +1,7 @@
+{
+  "name": "jenkinsDemoIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
